@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Login Form
+		</title>
+		<style type="text/css">
+			body
+			{
+				background-color: #009973;
+			}
+			.headerStyle,
+			.headline
+			{				
+				background-color: #009973;
+				color: white;
+			}
+			.headerStyle
+			{
+				border: 2px dashed white;
+				text-align: center;
+				font-family: cursive;
+				font-size: 20px;
+				padding: 10px;
+			}
+			.mainBlock
+			{
+				border: 2px solid white;
+				margin: 5px 0;
+				background-color:#009973;
+			}
+			.block1,
+			.block2,
+			.block3
+			{
+				border: 1px solid black;
+				margin: 30px 10px 10px 10px;
+				height: 220px;
+				position: relative;
+				background-color: #b3ffb3;
+			}
+			.headline
+			{
+				border: 2px dotted black;
+				font-weight: bold;
+				padding: 10px;
+				width: 150px;
+				position: absolute;
+				left: 20px;
+				top: -20px;
+				text-align: center;
+			}
+			.button
+			{
+				text-align: center;
+				padding: 10px;
+				margin: 10px;
+			}
+			.formDetails
+			{
+				list-style: none;
+			}
+			li
+			{
+				padding: 10px;
+			}
+			label
+			{
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="headerStyle">
+			REGISTRATION FORM
+		</header>
+		<div class="mainBlock">
+			<form action="submitPage.html" method="POST">
+				<div class="block1">
+					<div class="headline">Personal Details</div>
+					<ol class="formDetails">
+						<li>
+							<label for=username>Username : </label>
+							<input type="text" name="username" placeholder="Enter your full name" required>
+						</li>
+						<li>
+							<label for="password">Password : </label>
+							<input type="password" name="password" placeholder="Maximum 10 character" required maxlength="10">
+						</li>
+						<li>
+							<label for="emailId">Email Address : </label>
+							<input type="text" name="emailId" placeholder="Enter you email id" required>
+						</li>
+						<li>
+							<label for="age">Age : </label>
+							<input type="text" name="age" placeholder="Enter your age">
+						</li>
+						<li>
+							<label for="gender">Gender : </label>
+							<input type="radio" name="gender">Male
+							<input type="radio" name="gender">Female
+							<input type="radio" name="gender">Others
+						</li>
+					</ol>
+				</div>
+				<div class="block2">
+					<div class="headline">Address</div>
+					<ol class="formDetails">
+						<li>
+							<label for=country>Country : </label>
+							<select name="country" required>
+								<option>America</option>
+								<option>UK</option>
+								<option>India</option>
+							</select>
+						</li>
+						<li>
+							<label for="state">State : </label>
+							<select name="state">
+								<option></option>
+								<option>Florida</option>
+								<option>Georgia</option>
+								<option>California </option>
+								<option>England</option>
+								<option>Scotland</option>
+								<option>Ireland</option>
+								<option>Hydrabad</option>
+								<option>Kerala</option>
+								<option>TamilNadu</option>
+							</select>
+						</li>
+						<li>
+							<label for="pincode">Pincode : </label>
+							<input type="text" name="pincode" maxlength="6" required>
+						</li>
+						<li>
+							<label for="doorNo">Door Number : </label>
+							<input type="text" name="doorNo">
+						</li>
+						<li>
+							<label for="streetName">Street Name : </label>
+							<input type="text" name="">
+						</li>
+					</ol>
+				</div>
+				<div class="block3">
+					<div class="headline">Bio Summary</div>
+					<ol class="formDetails">
+						<li>
+							<label for="language">Known Language : </label>
+							<input type="checkbox" name="language">American English
+							<input type="checkbox" name="language">British English
+							<input type="checkbox" name="language">Tamil
+							<input type="checkbox" name="language">Telugu
+							<input type="checkbox" name="language">Malayalam
+						</li>
+						<li>
+							<label for="bio"><center>Write About yourself : </center></label>
+							<textarea name="bio" cols="160" rows="8" maxlength="250" placeholder="write 50 to 250 words"></textarea>
+						</li>
+					</ol>
+				</div>
+				<div>
+					<center>					
+						<input type="submit" value="REGISTER" class="button">
+					</center>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
